@@ -65,7 +65,63 @@
         </div>
     </header>
     <!--MAIN-->
-    <main></main>
+    <main class="container-fluid m-3">
+      <div class="row">
+        <!--BOTÕES COLLAPSE-->
+        <div class="col">
+          <p>
+            <!--<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>-->
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+              Button 1
+            </button>
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+              Button 2
+            </button>     
+            <button class="btn btn-light" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+              Button 3
+            </button>
+          </p>
+          <div class="collapse" id="collapse1">
+            <div class="card card-body">
+              Texto 1
+            </div>
+          </div>
+          <div class="collapse" id="collapse2">
+            <div class="card card-body">
+              Texto 2
+            </div>
+          </div>
+          <div class="collapse" id="collapse3">
+            <div class="card card-body">
+              Texto 3
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--DROPDOWN-->
+        <div class="col">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu de navegação
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="index.html" target="_blank">Página Inicial</a>
+              <a class="dropdown-item" href="biografia.html" target="_blank">Biografia</a>
+              <a class="dropdown-item" href="galeria.html" target="_blank">Galeria</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!--FOOTER-->
     <footer class="text-center">
