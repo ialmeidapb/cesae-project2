@@ -65,7 +65,56 @@
         </div>
     </header>
     <!--MAIN-->
-    <main></main>
+    <main class="container m-3">
+
+      <section class="ml-3 mb-3">
+        <!-- NOVO POST - MODAL -->
+        <div class="modal fade" id="novoPost" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-dark" id="titulo">Novo Post</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form>
+              <div class="modal-body">
+                
+                  <div class="form-group">
+                    <label for="titulo" class="col-form-label text-dark">Título</label>
+                    <input type="text" class="form-control text-center" id="modal_titulo" name="titulo">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="texto" class="col-form-label text-dark">Texto</label>
+                    <input type="text" class="form-control text-center" id="modal_texto" name="texto">
+                  </div>
+
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="novoPost()">Gravar</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- END NOVO POST - MODAL -->
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#novoPost">Novo Post</button>
+      </section>
+      <section id="posts" class="container">
+        <div id="post1" class="card mb-1">
+          <div class="card-body">
+            <h5 class="card-title">Título do Post</h5>
+            <p class="card-text">Texto do Post</p>
+            <button class="btn btn-danger" onclick="eliminarPost('post1')">Eliminar</button>
+            <button class="btn btn-success" onclick="gostar('post1_likes')">Gostar</button><span class="ml-5" id="post1_likes">0</span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+    </main>
 
     <!--FOOTER-->
     <footer class="text-center">
