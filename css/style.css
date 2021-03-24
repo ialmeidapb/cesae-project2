@@ -9,3 +9,16 @@ body{
     font-family: 'Roboto', sans-serif; /*tipo de letra Roboto, ou, se indisponível, sans-serif*/
     color: var(--white); /*cor do texto a branco*/
 }
+
+.nav-link{
+    /*color: var(--white);        USANDO PROPRIEDADE DO ROOT  */
+    color: white !important;           /*  USANDO COR DO CSS           */
+}
+
+.nav-link:hover{
+    color:black !important;
+}
+
+.active{
+    text-decoration: underline;
+}
