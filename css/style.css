@@ -1,0 +1,11 @@
+:root{
+    --blue:#1c73ff;
+    --white: #fff;
+    --black: #000;
+}
+
+body{
+    background-color: var(--blue); /*cor de fundo da página a azul*/
+    font-family: 'Roboto', sans-serif; /*tipo de letra Roboto, ou, se indisponível, sans-serif*/
+    color: var(--white); /*cor do texto a branco*/
+}
