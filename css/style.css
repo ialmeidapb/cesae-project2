@@ -22,3 +22,6 @@ body{
 .active{
     text-decoration: underline;
 }
+
+.card img { height:200px; }
+.card { color: var(--black); }
