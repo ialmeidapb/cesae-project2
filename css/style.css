@@ -10,6 +10,7 @@ body{
     color: var(--white); /*cor do texto a branco*/
 }
 
+/*------------------------ NAV ---------------------*/
 .nav-link{
     /*color: var(--white);        USANDO PROPRIEDADE DO ROOT  */
     color: white !important;           /*  USANDO COR DO CSS           */
@@ -22,6 +23,22 @@ body{
 .active{
     text-decoration: underline;
 }
+/*------------------------ CARDS ---------------------*/
+.card img { 
+    height:200px; 
+}
+.card { 
+    color: var(--black); 
+}
 
-.card img { height:200px; }
-.card { color: var(--black); }
+/*------------------------ CAROUSEL ---------------------*/
+.carousel .carousel-item { 
+    height: 500px; 
+}
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
